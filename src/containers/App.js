@@ -78,8 +78,8 @@ class App extends Component {
     }
 
     return (
-      <div className='tc'>
-        <h1 className='f1'>Star Wars API</h1>
+      <div className='tc flex flex-column items-center'>
+        <h1 className='f1 white'>Star Wars API</h1>
         <SearchBox searchChange={this.onSearchChange}/>
         <CategoryList categories={categories} categoryButtonClick={this.onCategoryButtonClick}/>
         <Scroll>

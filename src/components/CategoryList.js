@@ -4,7 +4,7 @@ const CategoryList = ({ categories, categoryButtonClick }) => {
   const categoryNames = Object.keys(categories);
   const buttons = categoryNames.map((item, i) => {
     return (
-      <button key={i} value={item} style={{ textTransform: 'capitalize' }} onClick={categoryButtonClick}>{item}</button>
+      <button key={i} value={item} className='ttc' onClick={categoryButtonClick}>{item}</button>
     );
   });
   return(
